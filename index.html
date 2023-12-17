@@ -96,69 +96,69 @@
 }
 
 .hero-section .hero {
-  max-width: 50%;
-  color: black;
+               max-width: 50%;
+               color: black;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+          font-size: 2.5rem;
+          margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: black;
-  width: 500px;
+        font-size: 1.2rem;
+         margin-bottom: 10px;
+         color: black;
+         width: 500px;
 }
 
 .hero-section .img img {
-  width: 517px;
+                  width: 517px;
 }
 
 .hero-section .buttons {
-  margin-top: 40px;
+                    margin-top: 40px;
 }
 
 .hero-section .buttons a {
-  text-decoration: none;
-  color: black;
-  padding: 12px 24px;
-  border-radius: 0.375rem;
-  font-weight: 600;
-  transition: 0.2s ease;
-  display: inline-block;
+                      text-decoration: none;
+                      color: black;
+                       padding: 12px 24px;
+                      border-radius: 0.375rem;
+                      font-weight: 600;
+                     transition: 0.2s ease;
+                     display: inline-block;
 }
 
 .hero-section .buttons a:not(:last-child) {
-  margin-right: 15px;
+         margin-right: 15px;
 }
 
 .buttons .join {
-  background-color: #fff;
+                background-color: #fff;
 }
 
 .hero-section .buttons .learn {
-  border: 1px solid #fff;
-  border-radius: 0.375rem;
+                            border: 1px solid #fff;
+                            border-radius: 0.375rem;
   
 }
 
 .hero-section .buttons a:hover {
-  background-color: black;
-  color: #fff;
+                             background-color: black;
+                             color: #fff;
 }
 
 #menu-toggle {
-  display: none;
+            display: none;
 }
 
 #hamburger-btn {
-  font-size: 1.8rem;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-  order: 1;
+                font-size: 1.8rem;
+                color: #fff;
+               cursor: pointer;
+               display: none;
+               order: 1;
 }
 .img1 img {
             max-width: 100%;
@@ -175,69 +175,93 @@
             #about{
               max-width: 50%;
             }
-            #about p{
-              width: 180%;
+            #about h2{
+              width: 190%;
               padding: 100px;
 
+            }
+            #Experience h2{
+              position: relative;
+              padding-left: 90px;
+              left: 0px;
+              font-size: 3rem;
+              top: 100px;
+            }
+            #Experience h3{
+              padding: 100px;
             }
         
 @media screen and (max-width: 1040px) {
   .navbar .logo a {
-    font-size: 1.5rem;
+              font-size: 1.5rem;
   }
 
   .links {
-    position: fixed;
-    left: -100%;
-    top: 75px;
-    width: 100%;
-    height: 100vh;
-    padding-top: 50px;
-    background: #6fcbdc;
-    flex-direction: column;
-    transition: 0.3s ease;
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        background: #6fcbdc;
+        flex-direction: column;
+        transition: 0.3s ease;
   }
 
   .navbar #menu-toggle:checked ~ .links {
-    left: 0;
+         left: 0;
   }
 
   .navbar #hamburger-btn {
-    display: flex;
+                 display: flex;
   }
 
   .header .buttons {
-    display: none;
+                  display: none;
   }
 
   .hero-section .hero {
-    max-width: 100%;
-    text-align: center;
-    padding: 15px;
+                 max-width: 100%;
+                text-align: center;
+                padding: 15px;
   }
 
   .hero-section .img1 img {
-    max-width: 100%;
-    left: 80px;
-    right: 0;
-    margin: auto;
-    position: absolute;
-    top: 880px;
+                        max-width: 100%;
+                        left: 80px;
+                        right: 0;
+                        margin: auto;
+                      position: absolute;
+                        top: 880px;
   }
   .hero-section .img2 img {
-    max-width: 70%;
-    left: 120px;
-    position: absolute;
-    top: 870px;
+                   max-width: 70%;
+                   left: 120px;
+                   position: absolute;
+                   top: 870px;
   }
   #about h2{
-  font-size: 1.2rem;
-  position: absolute;
-  margin-bottom: 0px;
-  color: black;
-  padding: 20px;
-  width: 500px;
-padding-top: 210%; }
+                 font-size: 1.2rem;
+                 position: absolute;
+                 margin-bottom: 0px;
+                 color: black;
+                 padding: 20px;
+                 width: 500px;
+                  padding-top: 210%; }
+#Experience h2{
+                 position: absolute;
+                 flex-direction: row-reverse;
+                 top: 300%;
+}
+#Experience h3{
+                 font-size: 1.2rem;
+                 position: absolute;
+                 margin-bottom: 0px;
+                 color: black;
+                 padding: 20px;
+                 width: 500px;
+                 padding-top: 480%
+}
 }
   </style>
   <body>
@@ -253,7 +277,7 @@ padding-top: 210%; }
         <ul class="links">
 
           <li><a href="#about"> about</a></li>
-          <li><a href="#"> Experience</a></li>
+          <li><a href="#Experience"> Experience</a></li>
           <li><a href="#"> Work</a></li>
           <li><a href="#"> Contact</a></li>
           
@@ -289,6 +313,16 @@ padding-top: 210%; }
 Since pursuing my engineering degree, my career has taken me through diverse industries, allowing me to refine my expertise in web development. In the realm of MERN Stack, I am dedicated to pushing boundaries and driving advancements. With experience worked on my StartUps LetsBuildHere, GetAiProducts,and other organizations and clients on multiple platforms like Upwork and Fiverr, where I have developed production ready website in solo and with teams. I also make coding related video and post on YouTube , this is something my passion along with coding.
 Here are a few technologies I've been working with recently 
       </h2>
+    </div>
+    <div id="Experience">
+      <h2>Where live worked</h2>
+      <h3>Full Stack Engineer at Upwork @ UpWork
+        Jan 2023 - Present
+        Worked on the website development in the using html css ReactJS, Wordpress, AWS, Git
+        Conducted testing tasks to ensure website functionality and quality. Managed a large user base on the website
+        Implemented website design and enhanced interactivity.
+        Collaborated closely with the team in regular meetings to discuss ongoing projects and future ideas.</h3>
+      
     </div>
     
 
