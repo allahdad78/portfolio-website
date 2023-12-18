@@ -382,7 +382,7 @@ top: 600%;
 }
 
 
-@media only screen  and  (max-width: 43opx) {
+@media only screen  and  (max-width: 430opx) {
     .navbar .logo a {
                 font-size: 1.5rem;
     }
