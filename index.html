@@ -202,7 +202,42 @@
                 width: 1000px;
                 padding-left: 100px;
               }
-@media screen and (max-width: 440px) {
+              input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background:none;
+  color: #000;
+  padding: 12px 20px;
+  border: black 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: hsl(97, 25%, 94%);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 20px;
+}
+footer{
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+@media screen and (max-width: 1140px) {
   .navbar .logo a {
               font-size: 1.5rem;
   }
@@ -301,6 +336,57 @@
                  padding: 20px;
                  width: 500px;
                  padding-top: 720%           }
+                 
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  position: relative;
+  display: flex;
+  left: 12px;
+
+
+}
+
+input[type=submit] {
+  background:none;
+  color: #000;
+  padding: 12px 20px;
+  border: black 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  left: 18px;
+  top: 110%;
+}
+
+footer{
+  padding-top: 27%;
+  width: 60%;
+  height: 40px;
+  left: 45px;
+  position: absolute;
+}
+
+.container {
+  width: 110%;
+  height: 70%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 10px;
+  position: absolute;
+  left: 55px;
+  margin: auto;
+  top: 510%;
+}
+
+
 
 }
   </style>
@@ -319,7 +405,7 @@
           <li><a href="#about"> about</a></li>
           <li><a href="#Experience"> Experience</a></li>
           <li><a href="#work"> Work</a></li>
-          <li><a href="#"> Contact</a></li>
+          <li><a href="#container"> Contact</a></li>
           
         </ul>
         <div class="buttons">
@@ -386,7 +472,27 @@ Here are a few technologies I've been working with recently
   Browser Compatibility:
   Testing and ensuring that the website works correctly across different web browsers.</h3>
   <div id="Contact">
-    <!-- <h1>Get In Touch</h1> -->
+<div class="container">
+  <form action="#">
+    <label for="fname"></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    </select>
+
+    <label for="subject"></label>
+    <textarea id="subject" name="subject" placeholder="Write something here.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+  <footer>
+    <p>@babu dahri
+    babu dahri babu.com</p>
+  </footer>
+  
+</div>
 
 
   </div>
