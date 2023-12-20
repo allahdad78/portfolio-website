@@ -13,6 +13,7 @@ body {
   background: linear-gradient(to bottom, #6fcbdc 23%, #cc6ef1 95%);
 }
 
+
 .header {
   position: fixed;
   top: 0;
@@ -145,44 +146,47 @@ body {
   background-color: black;
   color: #fff;
 }
-.img1 img{
-    width: 550px;
-
-}
-.img2 img{
-    width: 300px;
-    top: 384px;
-    left: 40%;
-    position: absolute;
-    border-radius: calc(110px);
+.card {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-#about {
-  max-width: 100%; /* Adjusted max-width */
-  padding: 0 15px; /* Adjusted padding */
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  position: relative;
+ 
+  
 }
-
-#about h2 {
-  width: 100%; /* Adjusted width */
+.container {
+  max-width: 800px; 
+  margin: 0 auto;
   padding: 20px;
 }
 
-#Experience {
-  text-align: center;
-  padding: 40px 15px; /* Adjusted padding */
+img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
 }
 
-#Experience h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: black;
+#about {
+  max-width: 100%; 
+  padding: 0 15px; 
 }
 
-#Experience h3 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: black;
+#about h2 {
+  width: 100%; 
+  padding: 20px;
 }
+
+
 
 #Work img {
   width: 100%;
@@ -249,11 +253,23 @@ input[type="submit"]:hover {
 
 footer {
   text-align: center;
-  padding: 20px 15px; /* Adjusted padding */
+  padding: 20px 15px; 
   color: #fff;
 }
+footer {
+  background-color:#cc6ef1;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-/* Media Queries */
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar .logo a {
     font-size: 1.5rem;
@@ -315,41 +331,38 @@ top: 830px;
   .hero-section .img2 img {
     max-width: 100%;
   }
+  .container {
+    padding: 10px;
+}
 
   #about h2 {
     font-size: 1rem;
     padding: 20px;
   }
 
-  #Experience h2 {
-    top: 110%;
-  }
-
-  #Experience h3 {
-    font-size: 1rem;
-    padding: 20px;
-    top: 160%;
-  }
 
   #Work img {
     margin-top: 190%;
   }
-  .img1 img{
-    width: 100%;
-    
-    position: absolute;
-    padding-top: 180%;
-    padding-right: 80px;
+  .card{
+  width: 100%;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  padding-top: 488%;
+  padding-right: 20px;
     
 
 }
-.img2 img{
-    width: 240px;
-    padding-top: 180%;
-    left: 0%;
-    position: absolute;
-    padding-right: 50px;
-    border-radius: calc(110px);
+.card img{
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+
+
 }
 
   #h2 {
