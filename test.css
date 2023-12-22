@@ -37,6 +37,10 @@ body {
   text-decoration: none;
   color: black;
 }
+.logo img{
+  border-radius: 50px;
+  width: 40px;
+}
 
 .navbar .links {
   display: flex;
@@ -181,7 +185,7 @@ img {
   padding: 0 15px; 
 }
 
-#about h2 {
+#about p {
   width: 100%; 
   padding: 20px;
 }
@@ -335,7 +339,7 @@ top: 830px;
     padding: 10px;
 }
 
-  #about h2 {
+  #about p {
     font-size: 1rem;
     padding: 20px;
   }
@@ -351,8 +355,8 @@ top: 830px;
   border-radius: 8px;
   overflow: hidden;
   position: absolute;
-  padding-top: 488%;
-  padding-right: 20px;
+  padding-top: 560%;
+  padding-right: 5px;
     
 
 }
@@ -368,13 +372,14 @@ top: 830px;
   #h2 {
     font-size: 1.5rem;
     padding: 20px;
-    top: 50%;
+    top: 70%;
   }
 
   #h3 {
     font-size: 1rem;
     padding: 20px;
-    top: 70%;
+    top: 50%;
+    margin-top: 180%;
   }
 
   input[type="text"],
